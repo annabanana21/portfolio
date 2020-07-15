@@ -1,0 +1,19 @@
+.intro {
+
+    &__box {
+        position: relative;
+    }
+
+    &__top {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 50vw;
+        height: 50vh;
+        background-color: yellowgreen;
+    }
+
+    &__name {
+        width: 50%;
+    }
+}

@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@700&display=swap");
+@font-face {
+  font-family: "Inter";
+  src: url("../assets/Inter/Inter-Bold-slnt=0.ttf");
+  font-weight: 800;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("../assets/Inter/Inter-Regular-slnt=0.ttf");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("../assets/Inter/Inter-SemiBold-slnt=0.ttf");
+  font-weight: 600;
+}
+
+@font-face {
+  src: url("../Magehand.ttf");
+  font-family: "magehand";
+}
+
+@font-face {
+  src: url("../ArizonaBold.ttf");
+  font-family: "arizona";
+}
+
+@font-face {
+  src: url("../Davidas.otf");
+  font-family: "davidas";
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Marino";
+  src: url("../assets/Marino/San Marino Outline.ttf");
+}
+
+* {
+  margin: 0;
+}
+
+.home {
+  height: 100vh;
+  width: 100vw;
+}
+
+.home__container {
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.home__title {
+  color: white;
+  line-height: 13rem;
+  font-size: 15rem;
+  font-family: "Marino";
+  font-weight: normal;
+}
+
+.home__scroll {
+  -webkit-transform: skewY(0deg);
+          transform: skewY(0deg);
+  opacity: 1;
+}
+
+.home__sub {
+  font-family: "arizona";
+  font-size: 4rem;
+  color: white;
+}
+/*# sourceMappingURL=Home.css.map */

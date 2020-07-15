@@ -1,0 +1,17 @@
+.intro__box {
+  position: relative;
+}
+
+.intro__top {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50vw;
+  height: 50vh;
+  background-color: yellowgreen;
+}
+
+.intro__name {
+  width: 50%;
+}
+/*# sourceMappingURL=Intro.css.map */
