@@ -1,54 +1,56 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import './Home.scss';
+import {ReactComponent as Icon} from '../../assets/github.svg';
+import {ReactComponent as Icon2} from '../../assets/linkedin.svg';
 
 const Home = () => {
 
-    let [scrollPos, setScroll] = useState(0);
+    // let [scrollPercent, setScrollPercent] = useState(0);
 
-    const scrolling = (pos) => {
-        if (pos > -3 && pos <= 0) {
-            if ((document.body.getBoundingClientRect()).top > scrollPos) {
-                console.log("UP")
-                setScroll(pos+0.001);
-                return pos+0.001
-
-            }else {
-                console.log("DOWN")
-                setScroll(pos-0.001);
-                return pos-0.001
-            }
-            
-        }   
-    }
+    // window.addEventListener('scroll', () => {
+    //     var scrollTop = window.pageYOffset;
+    //     setScrollPercent(scrollTop);
+    // })
 
 
+    // window.addEventListener("scroll", function(event) {
+    //     let scroller = document.querySelector('.home__scroll');
 
-    window.addEventListener("scroll", function(event) {
-        let scroller = document.querySelector('.home__scroll');
-        let value = -window.scrollY/60;
-        console.log()
-        scroller.style.transform = "skewY("+ value +"deg)"
+    //     if (scrollPercent >= 200 && scrollPercent <= 421) {
+    //         if (scrollPercent === 421) {
+    //             scroller.style.opacity = `${((421-scrollPercent)/421)}%`;
+    //         } else {
+    //             scroller.style.opacity = `${0}%`;
+    //         }
+    //     }
+    // });
 
-        let top = document.body.getBoundingClientRect().top
-        let height = scroller.getBoundingClientRect().top 
-        let calc = 1 - (top - height + 180) / 180
-        console.log(calc)
-        
-        scroller.style.opacity = calc;
+    // useEffect(() => {
+
+    // }, [scrollPercent])
 
 
-        // let currentAmount = scroller.style.transform;
-        // let setter = scrolling(Number(currentAmount.slice(11, currentAmount.length-4)));
-        // scroller.style.transform = "skew(0deg, "+setter+"deg)";
-    });
+
 
     return (
         <section className='home'>
+        <div className='home__bar'>
+                <ul className='home__wrap'>
+                    <li className='home__tab'>about</li>
+                    <li className='home__tab'>projects</li>
+                </ul>
+        </div>
             <div className='home__container'>
-            <div className="home__scroll">
-                <h2 className='home__title'>ANNA</h2>
-                <h2 className='home__title'>MASTORIS</h2>
+            <div className='home__image'>
+                <div className="home__scroll">
+                    <h2 className='home__title'>ANNA MASTORIS</h2>
+                    <h2 className='home__title--small'>full-stack developer & creative mind</h2>
+                </div>
             </div>
+            </div>
+            <div className='home__social'>
+                <a href="https://github.com/annabanana21" target="_blank" className='home__link'><Icon className='home__icon'/></a>
+                <a href="https://www.linkedin.com/in/anna-mastoris/" target="_blank" className='home__link'><Icon2 className='home__icon'/></a>
             </div>
         </section>)
 }

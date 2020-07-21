@@ -1,40 +1,16 @@
 import React from 'react';
 import anna from "../../assets/anna-name.png";
 import './Intro.scss';
-import Particles from 'react-particles-js';
+import mouse from '../../assets/mouse.svg';
+import monitor from '../../assets/moniter.svg';
+import cat from '../../assets/Cat.svg';
 
 const Intro = () => {
     return (
-        <div className='intro__box'>
-
-        <div className='intro__top'>
-          Anna
-        </div>
-        
-        <Particles 
-        params={{ 
-          particles: { 
-            number: { 
-              value: 200, 
-              density: { 
-                enable: true, 
-                value_area: 1000, 
-              } 
-            },
-            color: {
-                value: "373AD5"
-            } 
-          },
-          polygon: {
-              enable: true,
-              move: {
-                  radius: 100
-              }
-          } 
-        }} 
-      /> 
-      <img className='intro__name' src={anna}/>
-        </div>
+      <section className='intro'>
+        <h3 className='intro__name'>More About Me</h3>
+        <p className='intro__about'>I am a full-stack developer who is currently TAing a second semester of BrainStation's web development diploma program. I am proficient in javascript and React with prior experience with python and Java.</p>
+      </section>
     )
 }
 

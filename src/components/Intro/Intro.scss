@@ -1,19 +1,58 @@
+@import '../../partials/fonts';
+
+* {
+    box-sizing: border-box;
+}
+
 .intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30vh 15vw;
 
     &__box {
-        position: relative;
+        display: flex;
+        width: 100%;
+        height: 500px;
+
     }
 
-    &__top {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 50vw;
-        height: 50vh;
-        background-color: yellowgreen;
+    &__square {
+        width: 30%;
+        height: 100%;
+        background-color: #ee9572;
+        display: flex;
+        flex-direction: column;
+        padding: 2rem 2rem;
+
+        &:nth-child(3) {
+            background-color: #1a1e28;
+        }
+
+        &--alt {
+            @extend .intro__square;
+            background-color: transparent;
+            width: 40%;
+        }
     }
 
     &__name {
-        width: 50%;
+        font-size: 4rem;
+        color: white;
+        font-family: 'Anzil';
+        margin-bottom:  4rem;
+    }
+
+    &__about {
+        color: white;
+        font-family: 'Modelica';
+        max-width: 80%;
+        font-size: 1.25rem;
+        text-align: center;
+    }
+
+    &__icon {
+        height: 40%;
     }
 }

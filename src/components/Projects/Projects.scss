@@ -1,13 +1,17 @@
+@import '../../partials/fonts';
+
+
 .projects {
     width: 100%;
-    padding: 3rem 20%;
+    padding: 3rem 10%;
     display: flex;
     flex-direction: column;
     box-sizing: border-box;
 
     &__title {
-        font-size: 6rem;
+        font-size: 3rem;
         color: white;
-        margin-bottom: 40rem;
+        margin-bottom: 3rem;
+        font-family: 'Anzil';
     }
 }

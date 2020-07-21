@@ -1,7 +1,51 @@
 .card {
-    width: 60%;
-    height: fit-content;
+    width: 100%;
+    height:500px;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    justify-content: space-around;
+
+    &__image {
+        width: 50%;
+        height: 100%;
+        background-position: center;
+        background-size: cover;
+        filter: grayscale(90%);
+
+        &:hover {
+            background-size: 110% 110%;
+        }
+    }
+
+    &__blurb {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+    }
+
+    &__project {
+        font-family: 'Modelica';
+        font-size: 2rem;
+        color: white;
+    }
+
+    &__back {
+        height: 90%;
+        width: 55%;
+        background-color: #232325;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &:hover {
+            transition: height 1s, width 1s;
+            height: 80%;
+            width: 45%;
+        }
+    }
+
+    &__mock {
+        height: 90%;
+    }
 }

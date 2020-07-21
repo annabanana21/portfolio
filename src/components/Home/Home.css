@@ -76,7 +76,7 @@
 .home__scroll {
   -webkit-transform: skewY(0deg);
           transform: skewY(0deg);
-  opacity: 1;
+  opacity: 0.91;
 }
 
 .home__sub {

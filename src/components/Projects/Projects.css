@@ -1,6 +1,6 @@
 .projects {
   width: 100%;
-  padding: 3rem 20%;
+  padding: 3rem 10%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -15,6 +15,6 @@
 .projects__title {
   font-size: 6rem;
   color: white;
-  margin-bottom: 40rem;
+  margin-bottom: 3rem;
 }
 /*# sourceMappingURL=Projects.css.map */
