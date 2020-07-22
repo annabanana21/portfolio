@@ -1,20 +1,31 @@
 import React from 'react';
+import {BrowserRouter, Switch, Route} from 'react-router-dom';
 import "./App.scss";
-import logo from './logo.svg';
-import Hero from './components/Hero/Hero';
 import Intro from './components/Intro/Intro';
 import Home from './components/Home/Home';
 import Projects from './components/Projects/Projects';
-import Card from './components/Card/Card';
+import VideosPage from './components/VideosPage/VideosPage';
 
 
-function App() {
+function Main() {
   return (
     <div className="background">
       <Home />
       <Projects />
       <Intro />
     </div>
+  );
+}
+
+
+function App() {
+  return (
+    <BrowserRouter>
+      <Switch>
+        <Route exact path='/' component={Main}/>
+        <Route path='/videos' component={VideosPage}/>
+      </Switch>
+    </BrowserRouter>
   );
 }
 

@@ -22,7 +22,7 @@
 
     &__bar {
         background-color: #04060a;
-        padding-top: 1rem;
+        padding: 1rem 0;
         width: fit-content;
         position: fixed;
         right: 1rem;
@@ -40,6 +40,8 @@
         color: #ee9572;
         font-size: 1rem;
         font-family: 'Modelica';
+        margin-right: 1.5rem;
+        text-decoration: none;
 
         &:hover {
             cursor: pointer;
@@ -47,8 +49,8 @@
             transition: color 0.5s;
         }
 
-        &:first-of-type {
-            margin-right: 1.5rem;
+        &:last-of-type {
+            margin-right: 0;
         }
     }
 

@@ -2,6 +2,7 @@ import React, {useState, useEffect} from 'react';
 import './Home.scss';
 import {ReactComponent as Icon} from '../../assets/github.svg';
 import {ReactComponent as Icon2} from '../../assets/linkedin.svg';
+import {Link} from 'react-router-dom';
 
 const Home = () => {
 
@@ -38,6 +39,7 @@ const Home = () => {
                 <ul className='home__wrap'>
                     <li className='home__tab'>about</li>
                     <li className='home__tab'>projects</li>
+                    <li ><Link to='/videos' className='home__tab'>videos</Link></li>
                 </ul>
         </div>
             <div className='home__container'>
