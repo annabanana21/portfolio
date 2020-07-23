@@ -9,7 +9,7 @@ const VideoHero = () => {
         <section>
             <div className='display'>
                 <h4 className='display__head--small'>VIDEO RESOURCES TO</h4>
-                <h2 className='display__head'>KICKSTART YOUR LEARNING</h2>
+                <h2 className='display__head'>ELEVATE YOUR LEARNING</h2>
                 <form>
                     <input name='course' placeholder='Search' type='text' className='display__search'/>
                 </form>
