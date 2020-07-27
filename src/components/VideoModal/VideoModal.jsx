@@ -17,6 +17,21 @@ class VideoModal extends React.Component {
         myvideo.play();
     }
 
+    download = () => {
+        axios({
+            url: this.props.video.file,
+            method: 'GET',
+            responseType: 'blob', // important
+          }).then((response) => {
+            const url = window.URL.createObjectURL(new Blob([response.data]));
+            const link = document.createElement('a');
+            link.href = url;
+            link.setAttribute('download', 'SourceFile.zip');
+            document.body.appendChild(link);
+            link.click();
+          });
+    }
+
     render() {
         const {video, thumbnail, times} = this.props.video
     
@@ -41,6 +56,7 @@ class VideoModal extends React.Component {
                                     )
                                 })
                             }
+                            <div className='mode__button' onClick={this.download}>Download Starter Code</div>
                         </div>
                     </div>
                 </div>
