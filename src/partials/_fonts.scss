@@ -48,8 +48,15 @@
 
 @font-face {
     font-family: "Modelica";
-    src: url('../assets/Modelica/woff/BwModelicaSS01-Bold.woff');
+    src: url('../assets/Modelica/woff/BwModelica-Light.woff');
+    font-weight: 100;
 }
+@font-face {
+    font-family: "Modelica";
+    src: url('../assets/Modelica/woff/BwModelicaSS01-Bold.woff');
+    font-weight: normal;
+}
+
 
 @font-face {
     font-family: "Zyain";
