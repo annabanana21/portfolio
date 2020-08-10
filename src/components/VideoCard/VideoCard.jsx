@@ -33,7 +33,7 @@ class VideoCard extends React.Component {
                 </div>
             </div>
             {
-                this.state.show && <VideoModal video={this.props.video}/>
+                this.state.show && <VideoModal video={this.props.video} reset={this.reset}/>
             }
             </>
         )

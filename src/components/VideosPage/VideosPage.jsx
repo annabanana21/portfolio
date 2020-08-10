@@ -27,7 +27,8 @@ class VideosPage extends React.Component {
             <main>
                 <VideoHero />
                 <section className='vid'>
-                    <VideoSlide title={"JavaScript"} videosList={videosList}/>
+                    <VideoSlide title={"JavaScript"} videosList={videosList.slice(0,4)}/>
+                    <VideoSlide title={"React"} videosList={videosList.slice(4)}/>
                 </section>
             </main>
         )
