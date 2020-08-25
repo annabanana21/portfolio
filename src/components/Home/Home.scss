@@ -5,10 +5,10 @@
     box-sizing: border-box;
 }
 
-@keyframes fadeIn {
-    from{opacity: 0%; transform: skew(0deg, 3deg) translate3d(0px, 40px, 100px);};
-    to{opacity: 90%; transform: skew(0deg, 0deg) translate3d(0px, 0.9px, 0px);}
-}
+// @keyframes fadeIn {
+//     from{opacity: 0%; transform: skew(0deg, 3deg) translate3d(0px, 40px, 100px);};
+//     to{opacity: 100%; transform: skew(0deg, 0deg) translate3d(0px, 0.9px, 0px);}
+// }
 
 @keyframes skewIn {
     from{transform: skew(0deg, -0.25deg) translate3d(0px, -6.416px, 0px);};

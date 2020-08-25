@@ -1,0 +1,37 @@
+.mid {
+    padding-top: 10rem;
+    display: flex;
+    justify-content: center;
+    min-height: 250vh;
+    position: relative;
+
+    &__line {
+        width: 2px;
+        height: 0px;
+        background-color: white;
+        //transform: scale3d(1, 0, 1);
+    }
+
+    &__blurb {
+        width: 25%;
+        display: flex;
+        padding: 0 3rem;
+        position: absolute;
+        top: 30rem;
+        left: 0rem;
+        font-size: 2rem;
+        color: white;
+        z-index: 6;
+        opacity: 0;
+
+        &:nth-child(2) {
+            left: 75%;
+            top: 60rem;
+        }
+    }
+}
+
+@keyframes moveLeft {
+    from{left: 0rem };
+    to {left: 10rem}
+}

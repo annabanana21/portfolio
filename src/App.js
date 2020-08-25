@@ -5,14 +5,15 @@ import Intro from './components/Intro/Intro';
 import Home from './components/Home/Home';
 import Projects from './components/Projects/Projects';
 import VideosPage from './components/VideosPage/VideosPage';
+import MidLine from './components/MidLine/MidLine';
 
 
 function Main() {
   return (
     <div className="background">
       <Home />
-      <Projects />
       <Intro />
+      <MidLine />
     </div>
   );
 }
